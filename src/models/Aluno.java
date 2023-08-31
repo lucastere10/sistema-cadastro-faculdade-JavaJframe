@@ -7,8 +7,10 @@ public class Aluno extends Pessoa{
 	private int matricula;
 	private ArrayList<Disciplina> disciplina = new ArrayList<>();
 	
-	public Aluno(String cpf) {
-		super(cpf);
+	
+	public Aluno(String nome, String cpf, String senha, String endereco, int matricula) {
+		super(nome, cpf, senha, endereco);
+		this.matricula = matricula;
 		// TODO Auto-generated constructor stub
 	}
 	

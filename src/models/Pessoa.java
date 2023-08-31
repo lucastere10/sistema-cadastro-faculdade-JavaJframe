@@ -10,9 +10,19 @@ public class Pessoa {
 	protected String senha;
 	protected String endereco;
 
+	public Pessoa() {}
+	
 	public Pessoa(String cpf) {
 		super();
 		this.cpf = cpf;
+	}
+
+	public Pessoa(String nome, String cpf, String senha, String endereco) {
+		super();
+		this.nome = nome;
+		this.cpf = cpf;
+		this.senha = senha;
+		this.endereco = endereco;
 	}
 
 	public String getNome() {
