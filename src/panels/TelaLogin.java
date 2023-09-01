@@ -16,6 +16,8 @@ import javax.swing.JButton;
 import javax.swing.JProgressBar;
 import javax.swing.JToggleButton;
 import javax.swing.JSeparator;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
 
 public class TelaLogin extends JFrame {
 
@@ -92,6 +94,11 @@ public class TelaLogin extends JFrame {
 		contentPane.add(rdbtnEstudante);
 		
 		JButton btnLogin = new JButton("Login");
+		btnLogin.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				System.out.println("MINHA VARA");
+			}
+		});
 		btnLogin.setFont(new Font("Tahoma", Font.PLAIN, 12));
 		btnLogin.setBounds(131, 276, 89, 23);
 		contentPane.add(btnLogin);
